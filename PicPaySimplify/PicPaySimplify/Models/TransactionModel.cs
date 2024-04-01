@@ -1,4 +1,6 @@
-﻿namespace PicPaySimplify.Models
+﻿using PicPaySimplify.Models.DTOs;
+
+namespace PicPaySimplify.Models
 {
     public class TransactionModel
     {

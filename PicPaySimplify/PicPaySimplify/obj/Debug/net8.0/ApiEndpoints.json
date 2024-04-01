@@ -9,13 +9,53 @@
     "Parameters": [
       {
         "Name": "transaction",
-        "Type": "PicPaySimplify.Models.TransactionModel",
+        "Type": "PicPaySimplify.Models.DTOs.TransactionDTO",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "PicPaySimplify.Models.TransactionModel",
+        "Type": "PicPaySimplify.Models.DTOs.TransactionInfoUserDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PicPaySimplify.Controllers.TransactionController",
+    "Method": "GetAll",
+    "RelativePath": "transaction/getAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[PicPaySimplify.Models.DTOs.TransactionInfoUserDTO, PicPaySimplify, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PicPaySimplify.Controllers.UserController",
+    "Method": "GetAll",
+    "RelativePath": "user/getAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[PicPaySimplify.Models.UserModel, PicPaySimplify, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",

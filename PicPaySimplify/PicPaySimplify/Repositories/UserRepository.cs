@@ -27,7 +27,11 @@ namespace PicPaySimplify.Repositories
 
             return newModel;
         }
+        public async Task<List<UserModel>> GetAllUsers()
+        {
 
+            return await _dbContext.Users.ToListAsync();
+        }
         public async Task<UserModel> GetUserById(int id)
         {
             return await _dbContext.Users.FindAsync(id) ??
@@ -44,5 +48,6 @@ namespace PicPaySimplify.Repositories
             return true;
         }
 
+      
     }
 }
