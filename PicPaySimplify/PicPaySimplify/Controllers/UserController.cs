@@ -9,11 +9,11 @@ namespace PicPaySimplify.Controllers
     [ApiController]
     public class UserController : ControllerBase
     {
-        private readonly IUserRepository _UserRepository;
+        private readonly IUserRepository _buyerUserRepository;
 
-        public UserController(IUserRepository UserRepository)
+        public UserController(IUserRepository buyerUserRepository)
         {
-            _UserRepository = UserRepository;
+            _buyerUserRepository = buyerUserRepository;
         }
 
         [HttpPost("/user/register")]
@@ -21,24 +21,11 @@ namespace PicPaySimplify.Controllers
         {
             try
             {
-                return await _UserRepository.RegisterUser(newModel);
+                return await _buyerUserRepository.RegisterUser(newModel);
             }
             catch (Exception ex)
             {
-                return BadRequest(ex.InnerException);
-            }
-        }
-
-        [HttpGet("/user/getAll")]
-        public async Task<ActionResult<List<UserModel>>> GetAll()
-        {
-            try
-            {
-                return await _UserRepository.GetAllUsers();
-            }
-            catch(Exception ex)
-            {
-                return BadRequest(ex.InnerException);
+                return BadRequest(ex.Message);
             }
         }
 
@@ -48,11 +35,11 @@ namespace PicPaySimplify.Controllers
         {
             try
             {
-                return await _UserRepository.DeleteUser(id);
+                return await _buyerUserRepository.DeleteUser(id);
             }
             catch (Exception ex)
             {
-                return BadRequest(ex.InnerException);
+                return BadRequest(ex.Message);
             }
         }
 

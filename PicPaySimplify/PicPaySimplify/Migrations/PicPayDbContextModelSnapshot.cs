@@ -44,7 +44,7 @@ namespace PicPaySimplify.Migrations
 
                     b.HasIndex("ReceiverId");
 
-                    b.ToTable("Transactions", (string)null);
+                    b.ToTable("Transactions");
                 });
 
             modelBuilder.Entity("PicPaySimplify.Models.UserModel", b =>
@@ -84,7 +84,7 @@ namespace PicPaySimplify.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Users", (string)null);
+                    b.ToTable("Users");
                 });
 
             modelBuilder.Entity("PicPaySimplify.Models.TransactionModel", b =>
