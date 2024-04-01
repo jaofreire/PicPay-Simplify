@@ -8,6 +8,9 @@
     ".NETCoreApp,Version=v8.0": {
       "PicPaySimplify/1.0.0": {
         "dependencies": {
+          "AWSSDK.Core": "3.7.303.5",
+          "AWSSDK.Extensions.NETCore.Setup": "3.7.300",
+          "AWSSDK.SimpleEmail": "3.7.300.65",
           "Microsoft.EntityFrameworkCore": "8.0.3",
           "Microsoft.EntityFrameworkCore.Relational": "8.0.3",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.3",
@@ -16,6 +19,39 @@
         },
         "runtime": {
           "PicPaySimplify.dll": {}
+        }
+      },
+      "AWSSDK.Core/3.7.303.5": {
+        "runtime": {
+          "lib/net8.0/AWSSDK.Core.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.303.5"
+          }
+        }
+      },
+      "AWSSDK.Extensions.NETCore.Setup/3.7.300": {
+        "dependencies": {
+          "AWSSDK.Core": "3.7.303.5",
+          "Microsoft.Extensions.Configuration.Abstractions": "8.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/AWSSDK.Extensions.NETCore.Setup.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.7.0"
+          }
+        }
+      },
+      "AWSSDK.SimpleEmail/3.7.300.65": {
+        "dependencies": {
+          "AWSSDK.Core": "3.7.303.5"
+        },
+        "runtime": {
+          "lib/net8.0/AWSSDK.SimpleEmail.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.300.65"
+          }
         }
       },
       "Azure.Core/1.35.0": {
@@ -913,6 +949,27 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "AWSSDK.Core/3.7.303.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-IkjyAhd502f87j+MG8G+ENnKsNpB6Rq7aUUxS58VeMOrglT6jX9Y8FALiR6JHpmxphLSAEBzTw1NlWDC2fuZog==",
+      "path": "awssdk.core/3.7.303.5",
+      "hashPath": "awssdk.core.3.7.303.5.nupkg.sha512"
+    },
+    "AWSSDK.Extensions.NETCore.Setup/3.7.300": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-zMxAHFYSAWHsVV9Cn96nE+V40agRCjT0etF10f0d/nFMMb1z7lecVwNadq9JYyqlDj+jsVRH9ydk4Al4v/1+jg==",
+      "path": "awssdk.extensions.netcore.setup/3.7.300",
+      "hashPath": "awssdk.extensions.netcore.setup.3.7.300.nupkg.sha512"
+    },
+    "AWSSDK.SimpleEmail/3.7.300.65": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hXORZwDzztCj0ctSxXX8yjPeW3kYLownfDy7Gb9kqCwMxH5yL4r3sP2RyklqE7db/C0wGKlo9OYbJJSP0+CRTw==",
+      "path": "awssdk.simpleemail/3.7.300.65",
+      "hashPath": "awssdk.simpleemail.3.7.300.65.nupkg.sha512"
     },
     "Azure.Core/1.35.0": {
       "type": "package",

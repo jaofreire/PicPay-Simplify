@@ -4,6 +4,8 @@ using PicPaySimplify.Data;
 using PicPaySimplify.Models;
 using PicPaySimplify.Models.DTOs;
 using PicPaySimplify.Repositories.Interface;
+using PicPaySimplify.Services.AWSServices;
+using System.ComponentModel.DataAnnotations;
 
 namespace PicPaySimplify.Repositories
 {
@@ -11,11 +13,13 @@ namespace PicPaySimplify.Repositories
     {
         private readonly PicPayDbContext _dbContext;
         private readonly IUserRepository _userRepository;
+        private readonly SESWrapper _ses;
 
-        public TransactionRepository(PicPayDbContext dbContext, IUserRepository userRepository)
+        public TransactionRepository(PicPayDbContext dbContext, IUserRepository userRepository, SESWrapper ses)
         {
             _dbContext = dbContext;
             _userRepository = userRepository;
+            _ses = ses;
         }
 
         public async Task<TransactionInfoUserDTO> CreateTransaction(TransactionDTO newTransaction)
@@ -25,7 +29,8 @@ namespace PicPaySimplify.Repositories
                 var value = newTransaction.Value;
                 var payer = await _userRepository.GetUserById(newTransaction.PayerId);
                 var receiver = await _userRepository.GetUserById(newTransaction.ReceiverId);
-
+                List<string> emailsList = [payer.Email];
+               
                 if (payer.Balance >= value)
                 {
                     payer.Balance -= value;
@@ -38,6 +43,7 @@ namespace PicPaySimplify.Repositories
                     await _dbContext.SaveChangesAsync();
 
                     var transactionInfoUserDTO = ConvertToTransactionDTO(transactionModel, payer, receiver);
+                    SendEmailTransaction(emailsList,"Transaction Successfully", payer.Name, receiver.Name, value, transactionInfoUserDTO.Id);
 
                     return transactionInfoUserDTO;
                 }
@@ -116,6 +122,15 @@ namespace PicPaySimplify.Repositories
                 Value = x.Value
             }).ToListAsync();
 
+        }
+
+        public async void SendEmailTransaction(List<string>emailTo, string subject, string payerName, string receiverName, double value, int transactionId)
+        {
+            var body = "Hello " + payerName + ", your transaction for " + receiverName + " with value " + "R$ " + value + " is successfully!!" + " Transaction ID : " + transactionId;
+            var emailFrom = "joao.gabriel18872@gmail.com";
+
+            var emailRequest = _ses.EmailRequest(emailFrom, emailTo, subject, body);
+            await _ses.SendEmail(emailRequest);
         }
 
         public async Task<bool> ValidateTransaction(int payerId)

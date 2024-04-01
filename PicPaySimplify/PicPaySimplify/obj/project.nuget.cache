@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "veibmYyeH/hk7gerIio6sbGC+Q0xBdhtakWO34p9mohxy+r2GUcEj9i7RjlbSMFb2cCG6ARPaowo3qzMFR9P7w==",
+  "dgSpecHash": "E9accFhK6DanJzvjnnFREPfAlxhXgzruCCVaHzWmgKALtuCXav6pS4GPhAkMjK6XN204jbrORfTpSK/ESL8cdw==",
   "success": true,
   "projectFilePath": "E:\\estudo C#\\PicPay-Repository\\PicPay-Simplify-Repository\\PicPaySimplify\\PicPaySimplify\\PicPaySimplify.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\User\\.nuget\\packages\\awssdk.core\\3.7.303.5\\awssdk.core.3.7.303.5.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\awssdk.extensions.netcore.setup\\3.7.300\\awssdk.extensions.netcore.setup.3.7.300.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\awssdk.simpleemail\\3.7.300.65\\awssdk.simpleemail.3.7.300.65.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

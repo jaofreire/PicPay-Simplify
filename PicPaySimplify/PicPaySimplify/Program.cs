@@ -1,8 +1,9 @@
+using Amazon.SimpleEmail;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
 using PicPaySimplify.Data;
 using PicPaySimplify.Repositories;
 using PicPaySimplify.Repositories.Interface;
+using PicPaySimplify.Services.AWSServices;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,6 +17,9 @@ builder.Services.AddEntityFrameworkSqlServer().AddDbContext<PicPayDbContext>(opt
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DataBaseSql"));
 });
+
+builder.Services.AddAWSService<IAmazonSimpleEmailService>().AddTransient<SESWrapper>();
+builder.Services.AddDefaultAWSOptions(builder.Configuration.GetAWSOptions());
 
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<ITransactionRepository, TransactionRepository>();
