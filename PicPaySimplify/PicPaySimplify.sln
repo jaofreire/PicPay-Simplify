@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34622.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PicPaySimplify", "PicPaySimplify\PicPaySimplify.csproj", "{30703106-762C-4DCE-9EC0-0B676D64364B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{30703106-762C-4DCE-9EC0-0B676D64364B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30703106-762C-4DCE-9EC0-0B676D64364B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30703106-762C-4DCE-9EC0-0B676D64364B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30703106-762C-4DCE-9EC0-0B676D64364B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {66FE88FC-0BA8-4067-AC40-7804E9F793BE}
+	EndGlobalSection
+EndGlobal
