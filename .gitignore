@@ -1,0 +1,6 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/PicPaySimplify/PicPaySimplify/appsettings.json
+/PicPaySimplify/PicPaySimplify/appsettings.Development.json
