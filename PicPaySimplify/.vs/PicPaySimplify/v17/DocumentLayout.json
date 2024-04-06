@@ -3,32 +3,28 @@
   "WorkspaceRootPath": "E:\\estudo C#\\PicPay-Repository\\PicPay-Simplify-Repository\\PicPaySimplify\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{30703106-762C-4DCE-9EC0-0B676D64364B}|PicPaySimplify\\PicPaySimplify.csproj|e:\\estudo c#\\picpay-repository\\picpay-simplify-repository\\picpaysimplify\\picpaysimplify\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{30703106-762C-4DCE-9EC0-0B676D64364B}|PicPaySimplify\\PicPaySimplify.csproj|solutionrelative:picpaysimplify\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A4BAF914-D8B9-49AF-9968-B1C831C846C2}|docker-compose.dcproj|e:\\estudo c#\\picpay-repository\\picpay-simplify-repository\\picpaysimplify\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{A4BAF914-D8B9-49AF-9968-B1C831C846C2}|docker-compose.dcproj|solutionrelative:docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{30703106-762C-4DCE-9EC0-0B676D64364B}|PicPaySimplify\\PicPaySimplify.csproj|e:\\estudo c#\\picpay-repository\\picpay-simplify-repository\\picpaysimplify\\picpaysimplify\\helper\\databasefixture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{30703106-762C-4DCE-9EC0-0B676D64364B}|PicPaySimplify\\PicPaySimplify.csproj|solutionrelative:picpaysimplify\\helper\\databasefixture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{30703106-762C-4DCE-9EC0-0B676D64364B}|PicPaySimplify\\PicPaySimplify.csproj|e:\\estudo c#\\picpay-repository\\picpay-simplify-repository\\picpaysimplify\\picpaysimplify\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{30703106-762C-4DCE-9EC0-0B676D64364B}|PicPaySimplify\\PicPaySimplify.csproj|solutionrelative:picpaysimplify\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{30703106-762C-4DCE-9EC0-0B676D64364B}|PicPaySimplify\\PicPaySimplify.csproj|e:\\estudo c#\\picpay-repository\\picpay-simplify-repository\\picpaysimplify\\picpaysimplify\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{30703106-762C-4DCE-9EC0-0B676D64364B}|PicPaySimplify\\PicPaySimplify.csproj|solutionrelative:picpaysimplify\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{30703106-762C-4DCE-9EC0-0B676D64364B}|PicPaySimplify\\PicPaySimplify.csproj|e:\\estudo c#\\picpay-repository\\picpay-simplify-repository\\picpaysimplify\\picpaysimplify\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{30703106-762C-4DCE-9EC0-0B676D64364B}|PicPaySimplify\\PicPaySimplify.csproj|solutionrelative:picpaysimplify\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A4BAF914-D8B9-49AF-9968-B1C831C846C2}|docker-compose.dcproj|e:\\estudo c#\\picpay-repository\\picpay-simplify-repository\\picpaysimplify\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A4BAF914-D8B9-49AF-9968-B1C831C846C2}|docker-compose.dcproj|solutionrelative:launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{30703106-762C-4DCE-9EC0-0B676D64364B}|PicPaySimplify\\PicPaySimplify.csproj|e:\\estudo c#\\picpay-repository\\picpay-simplify-repository\\picpaysimplify\\picpaysimplify\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30703106-762C-4DCE-9EC0-0B676D64364B}|PicPaySimplify\\PicPaySimplify.csproj|solutionrelative:picpaysimplify\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30703106-762C-4DCE-9EC0-0B676D64364B}|PicPaySimplify\\PicPaySimplify.csproj|e:\\estudo c#\\picpay-repository\\picpay-simplify-repository\\picpaysimplify\\picpaysimplify\\helper\\databasefixture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30703106-762C-4DCE-9EC0-0B676D64364B}|PicPaySimplify\\PicPaySimplify.csproj|solutionrelative:picpaysimplify\\helper\\databasefixture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30703106-762C-4DCE-9EC0-0B676D64364B}|PicPaySimplify\\PicPaySimplify.csproj|e:\\estudo c#\\picpay-repository\\picpay-simplify-repository\\picpaysimplify\\picpaysimplify\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30703106-762C-4DCE-9EC0-0B676D64364B}|PicPaySimplify\\PicPaySimplify.csproj|solutionrelative:picpaysimplify\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30703106-762C-4DCE-9EC0-0B676D64364B}|PicPaySimplify\\PicPaySimplify.csproj|e:\\estudo c#\\picpay-repository\\picpay-simplify-repository\\picpaysimplify\\picpaysimplify\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{30703106-762C-4DCE-9EC0-0B676D64364B}|PicPaySimplify\\PicPaySimplify.csproj|solutionrelative:picpaysimplify\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,7 +50,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "UserController.cs",
               "DocumentMoniker": "E:\\estudo C#\\PicPay-Repository\\PicPay-Simplify-Repository\\PicPaySimplify\\PicPaySimplify\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "PicPaySimplify\\Controllers\\UserController.cs",
@@ -62,11 +58,12 @@
               "RelativeToolTip": "PicPaySimplify\\Controllers\\UserController.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-06T12:54:35.708Z"
+              "WhenOpened": "2024-04-06T12:54:35.708Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "DataBaseFixture.cs",
               "DocumentMoniker": "E:\\estudo C#\\PicPay-Repository\\PicPay-Simplify-Repository\\PicPaySimplify\\PicPaySimplify\\Helper\\DataBaseFixture.cs",
               "RelativeDocumentMoniker": "PicPaySimplify\\Helper\\DataBaseFixture.cs",
@@ -79,7 +76,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\estudo C#\\PicPay-Repository\\PicPay-Simplify-Repository\\PicPaySimplify\\PicPaySimplify\\Program.cs",
               "RelativeDocumentMoniker": "PicPaySimplify\\Program.cs",
@@ -92,7 +89,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "launchSettings.json",
               "DocumentMoniker": "E:\\estudo C#\\PicPay-Repository\\PicPay-Simplify-Repository\\PicPaySimplify\\PicPaySimplify\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "PicPaySimplify\\Properties\\launchSettings.json",
@@ -100,36 +97,25 @@
               "RelativeToolTip": "PicPaySimplify\\Properties\\launchSettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-04-05T20:18:27.69Z"
+              "WhenOpened": "2024-04-05T20:18:27.69Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "E:\\estudo C#\\PicPay-Repository\\PicPay-Simplify-Repository\\PicPaySimplify\\launchSettings.json",
-              "RelativeDocumentMoniker": "launchSettings.json",
-              "ToolTip": "E:\\estudo C#\\PicPay-Repository\\PicPay-Simplify-Repository\\PicPaySimplify\\launchSettings.json",
-              "RelativeToolTip": "launchSettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-04-05T20:15:23.447Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "docker-compose.yml",
               "DocumentMoniker": "E:\\estudo C#\\PicPay-Repository\\PicPay-Simplify-Repository\\PicPaySimplify\\docker-compose.yml",
               "RelativeDocumentMoniker": "docker-compose.yml",
               "ToolTip": "E:\\estudo C#\\PicPay-Repository\\PicPay-Simplify-Repository\\PicPaySimplify\\docker-compose.yml",
               "RelativeToolTip": "docker-compose.yml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAACIAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
               "WhenOpened": "2024-04-05T19:53:01.968Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "appsettings.json",
               "DocumentMoniker": "E:\\estudo C#\\PicPay-Repository\\PicPay-Simplify-Repository\\PicPaySimplify\\PicPaySimplify\\appsettings.json",
               "RelativeDocumentMoniker": "PicPaySimplify\\appsettings.json",
