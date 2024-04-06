@@ -27,7 +27,7 @@ namespace PicPaySimplify.Controllers
             }
             catch (Exception ex)
             {
-                return BadRequest(ex.InnerException);
+                return BadRequest(ex.Message);
             }
         }
 
@@ -41,7 +41,7 @@ namespace PicPaySimplify.Controllers
             }
             catch(Exception ex)
             {
-                return BadRequest(ex.InnerException);
+                return BadRequest(ex.Message);
             }
         }
     }
