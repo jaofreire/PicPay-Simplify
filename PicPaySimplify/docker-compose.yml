@@ -1,0 +1,38 @@
+version: '3.4'
+
+services:
+  picpaysimplify:
+    container_name: picpaysimplify-api
+    image: jaofreire/picpaysimplify:latest
+    environment:
+     - DataBaseSql=Server=sqlserver-picpaysimplify;Database=DB_PicPaySimplify;User Id=sa;Password=@Sa1234567;TrustServerCertificate=True
+    build:
+      context: .
+      dockerfile: PicPaySimplify/Dockerfile
+    ports:
+     - 3091:8081
+    depends_on:
+     - sqlserver
+    networks:
+     - net-picpaysimplify
+
+  sqlserver:
+   container_name: sqlserver-picpaysimplify
+   image: mcr.microsoft.com/mssql/server:2022-latest
+   environment:
+    - "ACCEPT_EULA=Y"
+    - "MSSQL_SA_PASSWORD=@Sa1234567"
+   volumes:
+    - /var/opt/mssql
+   ports:
+    - 3080:1433
+   networks:
+    - net-picpaysimplify
+   
+
+
+networks:
+ net-picpaysimplify:
+  driver: bridge  
+
+

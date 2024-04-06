@@ -15,7 +15,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddEntityFrameworkSqlServer().AddDbContext<PicPayDbContext>(options =>
 {
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DataBaseSql"));
+    options.UseSqlServer(Environment.GetEnvironmentVariable("DataBaseSql"));
 });
 
 builder.Services.AddAWSService<IAmazonSimpleEmailService>().AddTransient<SESWrapper>();

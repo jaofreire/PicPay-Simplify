@@ -1,0 +1,64 @@
+name: dockercompose3181965913947339775
+services:
+  picpaysimplify:
+    build:
+      context: E:\estudo C#\PicPay-Repository\PicPay-Simplify-Repository\PicPaySimplify
+      dockerfile: PicPaySimplify/Dockerfile
+    container_name: picpaysimplify-api
+    depends_on:
+      sqlserver:
+        condition: service_started
+        required: true
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_HTTP_PORTS: "8080"
+      ASPNETCORE_HTTPS_PORTS: "8081"
+      DataBaseSql: Server=sqlserver-picpaysimplify;Database=DB_PicPaySimplify;User Id=sa;Password=@Sa1234567;TrustServerCertificate=True
+    image: jaofreire/picpaysimplify:latest
+    networks:
+      net-picpaysimplify: null
+    ports:
+      - mode: ingress
+        target: 8081
+        published: "3091"
+        protocol: tcp
+      - mode: ingress
+        target: 8080
+        protocol: tcp
+      - mode: ingress
+        target: 8081
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: C:\Users\User\AppData\Roaming/Microsoft/UserSecrets
+        target: /home/app/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\User\AppData\Roaming/ASP.NET/Https
+        target: /home/app/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+  sqlserver:
+    container_name: sqlserver-picpaysimplify
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: '@Sa1234567'
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    networks:
+      net-picpaysimplify: null
+    ports:
+      - mode: ingress
+        target: 1433
+        published: "3080"
+        protocol: tcp
+    volumes:
+      - type: volume
+        target: /var/opt/mssql
+        volume: {}
+networks:
+  net-picpaysimplify:
+    name: dockercompose3181965913947339775_net-picpaysimplify
+    driver: bridge
