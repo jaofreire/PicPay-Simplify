@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PicPaySimplify")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0cdecdc6c29548b7c538e31933a3c4a644f9e806")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+196e0db3a8f94061667eb6ecde41492e8e83a1ff")]
 [assembly: System.Reflection.AssemblyProductAttribute("PicPaySimplify")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PicPaySimplify")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

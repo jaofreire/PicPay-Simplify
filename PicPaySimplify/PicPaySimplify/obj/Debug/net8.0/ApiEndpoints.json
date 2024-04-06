@@ -1,5 +1,25 @@
 [
   {
+    "ContainingType": "PicPaySimplify.Controllers.DataBaseController",
+    "Method": "UpdateMigration",
+    "RelativePath": "migrationUpdate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "PicPaySimplify.Controllers.TransactionController",
     "Method": "CreateNewTransaction",
     "RelativePath": "transaction/create",

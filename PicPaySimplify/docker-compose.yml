@@ -6,9 +6,6 @@ services:
     image: jaofreire/picpaysimplify:latest
     environment:
      - DataBaseSql=Server=sqlserver-picpaysimplify;Database=DB_PicPaySimplify;User Id=sa;Password=@Sa1234567;TrustServerCertificate=True
-    build:
-      context: .
-      dockerfile: PicPaySimplify/Dockerfile
     ports:
      - 3091:8081
     depends_on:
