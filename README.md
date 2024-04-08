@@ -96,7 +96,7 @@ User Model:
 | :---------- | :--------- | 
 | `userModel`      | `UserModel` |
 
-
+#### Remove user
 ```http
   DELETE user/remove/{id}
 ```
